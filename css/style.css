@@ -1,0 +1,163 @@
+.under-sea {
+	width: 100%;
+	filter: contrast(120%);
+	position: relative;
+}
+.unicorn {
+	width: 120px;
+	position: absolute;
+	top: 10px;
+	left: 1270px;
+	transform: rotate(-30deg);
+	animation: moveunicorn 6s infinite;
+	animation-direction: alternate;
+}
+.goldfish {
+	width: 100px;
+	position: absolute;
+	top: 750px;
+	left: 1250px;
+	animation: movegoldfish 5s infinite;
+	animation-direction: alternate;
+}
+
+.starfish {
+	width: 60px;
+	position: absolute;
+	top: 720px;
+	left: 180px;
+	opacity: 0.7;
+	animation: movestarfish 2s infinite;
+
+
+}
+.starfish2 {
+	width: 60px;
+	position: absolute;
+	top: 700px;
+	left: 250px;
+	position: absolute;
+	opacity: 0.7;
+	animation: movestarfish 2s infinite;
+
+}
+.starfish3 {
+	width: 60px;
+	position: absolute;
+	top: 800px;
+	left: 200px;
+	opacity: 0.7;
+	animation: movestarfish 2s infinite;
+
+
+}
+.nemo {
+	width: 100px;
+	position: absolute;
+	left: 300px;
+	top: 750px;
+	animation: movenemo 5s infinite;
+}
+.little-ariel {
+	height: 130px;
+	position: absolute;
+	left: 1150px;
+	top: 640px;
+	box-shadow: 5px 5px 35px #00ccff;
+	border-radius: 30px 15px;
+	transition: all 2s linear 0.5s;
+}
+.older-ariel {
+	width: 200px;
+	position: absolute;
+	top: 450px;
+	left: 650px;
+	border-radius: 40px;
+	box-shadow: 8px 7px 35px red;
+	transition: all 2s linear 0.5s;
+}
+
+.rainbow {
+	width: 350px;
+	position: absolute;
+	left: 1050px;
+	filter: blur(1px);
+	transition: all 3s linear 0.5s;
+}
+
+.sitting-fairy {
+	width: 180px;
+	position: absolute;
+	top: 40px;
+	left: 1000px;
+	border-radius: 20px;
+	filter: contrast(200%);
+}
+.flying-fairy {
+	width: 150px;
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	border-radius: 20px;
+	filter: contrast(200%);
+	animation: movefairy 5s infinite ;
+}
+
+
+
+
+
+
+
+.little-ariel:hover {
+	height: 210px;
+	box-shadow: 7px 8px 35px #0000ff;
+}
+.older-ariel:hover {
+	width: 280px;
+	box-shadow: 8px 7px 35px #ff00ff;
+}
+.rainbow:hover {
+	filter: blur(5px);
+
+}
+
+
+
+
+@keyframes moveunicorn {
+0% {top: 0px}
+25% {top: 250px}
+70% {top: 350px}
+100% {top: 680px}
+}
+@keyframes movegoldfish {
+	0% {transform: translate(-100px);}
+	20% {transform: translate(-200px);}
+	40% {transform: translate(-300px);}
+	60% {transform: translate(-450px,-30px);}
+	80% {transform: translate(-650px,-50px);}
+	100% {transform: translate(-800px,-80px);}
+} 
+@keyframes movestarfish {
+	0% {transform: translate(2px);}
+	50% {transform: translate(-2px);}
+	100% {transform: translate(3px);}
+}
+@keyframes movenemo {
+	0% {left: 300px;}
+	20% {left: 450px; top: 700px;}
+	40% {left: 600px; top: 750px;}
+	60% {left: 650px; top: 750px;}
+	80% {left: 700px; top: 770px;}
+	100% {left: 1000px;}
+}
+@keyframes movefairy {
+	0% {left: 150px; top:40;}
+	20% {left: 250px; top: 50px; opacity: 0.8;}
+	40% {left: 350px; top: 70px; opacity: 0.7;}
+	60% {left: 500px; top: 110px;opacity: 0.6;}
+	80% {left: 600px; top: 150px; opacity: 0.5;}
+	90% {left: 700px; top: 190px;opacity: 0.4;}
+	100% {left: 850px; top: 200px;opacity: 0.2;}
+}
